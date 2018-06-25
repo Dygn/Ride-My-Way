@@ -11,9 +11,7 @@ ul#hmenu {
 }
 
 
-ul#hmenu li {
-	float: left;
-ul#hmenu li#r1{
+ul#hmenu li{
 	float: right;
 	}
 	
