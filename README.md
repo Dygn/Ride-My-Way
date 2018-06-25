@@ -16,6 +16,23 @@ Ride-My-Way App is a carpooling application that provides drivers with the abili
 5. Drivers can view the requests to the ride offer they created.
 6. Drivers can either accept or reject a ride request.
 
+---
+## Endpoints
+
+Test on Postman 
+## API Endpoints
+GET all rides
+https://riddemyway.herokuapp.com/api/v1/rides
+
+GET rides by Id
+https://riddemyway.herokuapp.com/api/v1/rides/1
+https://riddemyway.herokuapp.com/api/v1/rides/2
+
+POST create ride
+https://riddemyway.herokuapp.com/api/v1/rides
+
+PUT request ride
+https://riddemyway.herokuapp.com/api/v1/rides
 
 ---
 ## Installation
