@@ -13,6 +13,10 @@ ul#hmenu {
 
 ul#hmenu li {
 	float: left;
+ul#hmenu li#r1, li#r2{
+	float: right;
+	}
+	
 }
 ul#hmenu li a {
     display: inline-block;
