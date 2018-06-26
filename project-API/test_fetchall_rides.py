@@ -10,7 +10,4 @@ def test_get_all_rides():
     #assert data['status'] == 'success'
     assert isinstance(data, list) == True
     assert len(data) == 2
-    #assertEqual(data['count'], 0)
-    #assertIsInstance(data['count'], int)
-    #assertEqual(data['previous'], None)
-    #assertEqual(data['next'], None)
+   
