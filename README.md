@@ -31,7 +31,7 @@ https://riddemyway.herokuapp.com/api/v1/rides/2
 POST create ride
 https://riddemyway.herokuapp.com/api/v1/rides
 
-PUT request ride
+POST request ride
 https://riddemyway.herokuapp.com/api/v1/rides
 
 ---
