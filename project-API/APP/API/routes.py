@@ -20,9 +20,9 @@ def get_ride_by_id(id):
             if ride["id"] == id:
                 return make_response(jsonify(ride))
         else:
-           return make_response(jsonify("message":"resource must have id 1 2 or one you just created"))
+           return make_response(jsonify({"message":"resource must have id 1 2 or one you just created"}))
     else:
-        return make_response(jsonify("message":"id must be an integer"))
+        return make_response(jsonify("{message":"id must be an integer"}))
     
 
 @Bluep.route('/rides/<int:id>', methods=['POST'])
@@ -35,9 +35,9 @@ def post_ride_request(id):
                 ride["requests"].append(data)
                 return make_response(jsonify(ride), 201)
         else:
-            return make_response(jsonify("message":"resource must have id 1 2 or one you just created"))
+            return make_response(jsonify({"message":"resource must have id 1 2 or one you just created"}))
     else:
-        return make_response(jsonify("message":"id must be an int"))
+        return make_response(jsonify({"message":"id must be an int"}))
 
 
 @Bluep.route('/rides', methods=['POST'])
@@ -47,7 +47,7 @@ def create_ride():
     if isinstance(data["id"], int) and isinstance(data["departure"], string):
         for ride in ride_resource():
             if ride["id"] == id:
-                return make_response(jsonify("message":"ride id must be unique"))
+                return make_response(jsonify({"message":"ride id must be unique"}))
         else:
             dt = ride_resource().append(data)
             return make_response(jsonify(dt), 201)
