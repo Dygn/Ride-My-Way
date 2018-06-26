@@ -66,14 +66,6 @@ start server
 [http://dygn.github.io/Ride-My-Way/UI](http://dygn.github.io/Ride-My-Way/UI/)
 
 ---
-## Heroku deployment
-<p><code>$ heroku login</p></code>
-<p><code>$ venv\Scripts\activate</p></code>
-<p><code>$ pip install gunicorn</p></code>
-<p><code>$ heroku create</p></code>
-<p><code>$ heroku open</p></code>
-<p><code>$ git push heroku developV1<p></code>
----
 ## API Documentation
 
 ### Authors
