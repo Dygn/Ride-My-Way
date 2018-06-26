@@ -1,5 +1,0 @@
-from APP import APP
-
-def test_get_all_rides():
-    """test that the API can fetch all rides available"""
-    
