@@ -10,8 +10,4 @@ def test_create_ride():
     response = client.put('/api/v1/rides/1', data = json.dumps(dt) , content_type = 'application/json' )
     result = json.loads(response.data)
     assert response.status_code == 201
-    #assertTrue(res.content_type == 'application/json')
-    #self.assertTrue(data['status'] == 'success')
-    #self.assertTrue(data['name'] == 'Adventure')
-    #self.assertEqual(data['id'], 1)
-
+    
